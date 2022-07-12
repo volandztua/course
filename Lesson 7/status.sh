@@ -6,7 +6,7 @@ Q=`ps -ef | grep root | grep apache2 | wc -l`
 
 if [ $Q -gt 0 ];
 then
-	kill -19 $PID
+	kill -15 $PID
 	echo "Process $name $PID stopped"
 fi
 
