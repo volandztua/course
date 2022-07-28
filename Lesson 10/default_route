@@ -1,0 +1,7 @@
+
+У меня нет сетевого интерфейса eth0, но если бы был, default route можно задать так:
+ip route add default via 192.168.0.1 dev eth0
+или
+route add default eth0
+а если заменить, то 
+ip route replace default via 192.168.0.1 dev eth0
