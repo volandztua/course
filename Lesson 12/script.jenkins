@@ -10,8 +10,8 @@ pipeline {
         }
         stage('changing script & starting apache2') {
             steps {
-                sh 'echo "sudo systemctl start apache2.service" > status.sh'
-                sh 'status.sh'
+                sh 'echo "sudo systemctl start apache2.service" > Lesson\ 12/status.sh'
+                sh 'Lesson\ 12/status.sh'
             }
         }
         stage('Checking') {
