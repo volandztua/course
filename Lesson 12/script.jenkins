@@ -1,0 +1,25 @@
+
+pipeline {
+        agent any
+
+        stages {
+        stage('Start') {
+            steps {
+                echo "Starting pipeline"
+            }
+        }
+        stage('changing script & starting apache2') {
+            steps {
+                sh 'echo "sudo systemctl start apache2.service" > status.sh'
+                sh 'status.sh'
+            }
+        }
+        stage('Checking') {
+            steps {
+                echo 'check service status'
+                sh "sudo systemctl status apache2.service"
+                }
+        }
+    }
+}
+
