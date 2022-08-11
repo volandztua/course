@@ -13,12 +13,6 @@ pipeline {
                 sh 'sudo "Lesson 7"/status2.sh'
             }
         }
-        stage('Checking') {
-            steps {
-                echo 'check service status'
-                sh 'sudo "Lesson 7"/status.sh'
-                }
-        }
     }
 }
 

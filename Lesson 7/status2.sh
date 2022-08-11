@@ -18,5 +18,12 @@ if [ $Q -eq 1 ]
 then
 		`sudo systemctl start apache2.service`
         	echo "Process $name started"	
-		fi
+fi
 
+if [ $stat == "inactive" ] || [ -z $PID ];
+then
+        echo "Build FAILED"
+        else
+              echo "Build OK"
+fi
+		
