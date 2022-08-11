@@ -1,12 +1,12 @@
 #!/bin/bash
 
-PID=`pgrep -u root apache2`
-name=`ps -eo comm,user |grep root|grep apache2|awk '{print $1}'`
-Q=`ps -ef | grep root | grep apache2 | wc -l`
+PID=`systemctl status apache2.service | grep PID |awk '{print $3}'`
+stat=`systemctl status apache2| grep Active | awk '{print $2}'`
 
-if [ $Q -gt 0 ];
+if [ $stat == "inactive" ] || [ -z $PID ];
 then
-	kill -15 $PID
-	echo "Process $name $PID stopped"
+       echo "Build FAILED"
+else
+       echo "Build OK"
 fi
 

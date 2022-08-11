@@ -1,17 +1,22 @@
 #!/bin/bash
 
-PID=`pgrep -u root apache2`
-name=`ps -eo comm,user |grep root|grep apache2|awk '{print $1}'`
-Q=`ps -ef | grep root | grep apache2 | wc -l`
+PID=`systemctl status apache2.service | grep PID |awk '{print $3}'`
+name=`systemctl status apache2.service | grep "apache2.service -" | awk '{print $2}'`
+stat=`systemctl status apache2| grep Active | awk '{print $2}'`
+Q=`ps -p $PID | wc -l`
 
-if [ $Q -gt 0 ];
+if [ $stat == "inactive" ] || [ -z $PID ];
+then 
+	echo "Process $name inactive or missing"
+	else
+              `sudo systemctl stop apache2.service`
+fi	
+
+sleep 10
+	
+if [ $Q -eq 1 ]
 then
-	kill -15 $PID
-	echo "Process $name $PID stopped"
-	sleep 10
-	if [ $PID = `pgrep -u root apache2` ]
-	then
-		kill -9 $PID
-	fi
-fi
+		`sudo systemctl start apache2.service`
+        	echo "Process $name started"	
+		fi
 
