@@ -1,0 +1,38 @@
+
+package _Self.buildTypes
+
+import jetbrains.buildServer.configs.kotlin.*
+import jetbrains.buildServer.configs.kotlin.buildSteps.exec
+import jetbrains.buildServer.configs.kotlin.triggers.vcs
+
+object Build1 : BuildType({
+    name = "Build_Stage_1"
+
+    vcs {
+        root(HttpsGithubComVolandztuaCourseGitRefsHeadsMaster)
+    }
+
+    steps {
+        exec {
+            name = "step1"
+            workingDir = "Lesson 5"
+            path = "Lesson 5/sort.sh"
+        }
+        exec {
+            name = "step2"
+            workingDir = "Lesson 5"
+            path = "Lesson 5/etc_dir.sh"
+        }
+        exec {
+            name = "step3"
+            workingDir = "Lesson 5"
+            path = "Lesson 5/executable.sh"
+        }
+    }
+
+    triggers {
+        vcs {
+        }
+    }
+})
+

@@ -1,0 +1,47 @@
+
+package _Self.buildTypes
+
+import jetbrains.buildServer.configs.kotlin.*
+import jetbrains.buildServer.configs.kotlin.buildSteps.exec
+import jetbrains.buildServer.configs.kotlin.triggers.vcs
+
+object Build : BuildType({
+    name = "Build_Stage_2"
+
+    artifactRules = "Lesson 6 => release_ver_%teamcity.build.id%.gzip"
+    publishArtifacts = PublishMode.SUCCESSFUL
+
+    vcs {
+        root(HttpsGithubComVolandztuaCourseGitRefsHeadsMaster)
+    }
+
+    steps {
+        exec {
+            name = "step1"
+            path = "Lesson 6/cmd_names.sh"
+        }
+        exec {
+            name = "step2"
+            path = "Lesson 6/descriptor.sh"
+        }
+        exec {
+            name = "step3"
+            path = "Lesson 6/py.sh"
+        }
+        exec {
+            name = "step4"
+            path = "Lesson 6/usr_executables.sh"
+        }
+    }
+
+    triggers {
+        vcs {
+        }
+    }
+
+    dependencies {
+        snapshot(Build1) {
+        }
+    }
+})
+
