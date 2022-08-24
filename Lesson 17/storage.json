@@ -1,0 +1,61 @@
+
+{
+    "sku": {
+        "name": "Standard_LRS",
+        "tier": "Standard"
+    },
+    "kind": "StorageV2",
+    "id": "/subscriptions/59bdff3a-c79f-4fd0-9ff7-aa13c1a4da49/resourceGroups/devops_test_rg/providers/Microsoft.Storage/storageAccounts/azurestorage0101",
+    "name": "azurestorage0101",
+    "type": "Microsoft.Storage/storageAccounts",
+    "location": "westeurope",
+    "tags": {},
+    "properties": {
+        "minimumTlsVersion": "TLS1_1",
+        "allowBlobPublicAccess": true,
+        "allowSharedKeyAccess": true,
+        "isHnsEnabled": true,
+        "networkAcls": {
+            "bypass": "AzureServices",
+            "virtualNetworkRules": [],
+            "ipRules": [],
+            "defaultAction": "Allow"
+        },
+        "supportsHttpsTrafficOnly": true,
+        "encryption": {
+            "services": {
+                "file": {
+                    "enabled": true,
+                    "lastEnabledTime": "2022-08-24T16:25:15.9543868Z"
+                },
+                "table": {
+                    "enabled": true,
+                    "lastEnabledTime": "2022-08-24T16:25:15.9543868Z"
+                },
+                "queue": {
+                    "enabled": true,
+                    "lastEnabledTime": "2022-08-24T16:25:15.9543868Z"
+                },
+                "blob": {
+                    "enabled": true,
+                    "lastEnabledTime": "2022-08-24T16:25:15.9543868Z"
+                }
+            },
+            "keySource": "Microsoft.Storage"
+        },
+        "accessTier": "Hot",
+        "provisioningState": "Succeeded",
+        "creationTime": "2022-08-24T16:25:15.4543838Z",
+        "primaryEndpoints": {
+            "dfs": "https://azurestorage0101.dfs.core.windows.net/",
+            "web": "https://azurestorage0101.z6.web.core.windows.net/",
+            "blob": "https://azurestorage0101.blob.core.windows.net/",
+            "queue": "https://azurestorage0101.queue.core.windows.net/",
+            "table": "https://azurestorage0101.table.core.windows.net/",
+            "file": "https://azurestorage0101.file.core.windows.net/"
+        },
+        "primaryLocation": "westeurope",
+        "statusOfPrimary": "available"
+    }
+}
+
