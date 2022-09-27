@@ -1,0 +1,12 @@
+{ "_id" : 5, "name" : "Wilburn Spiess", "scores" : [ { "score" : 44.87186330181261, "type" : "exam" }, { "score" : 25.72395114668016, "type" : "quiz" }, { "score" : 63.42288310628662, "type" : "homework" } ] }
+{ "_id" : 20, "name" : "Tressa Schwing", "scores" : [ { "score" : 42.17439799514388, "type" : "exam" }, { "score" : 71.99314840599558, "type" : "quiz" }, { "score" : 81.23972632069464, "type" : "homework" } ] }
+{ "_id" : 31, "name" : "Tandra Meadows", "scores" : [ { "score" : 24.90138146001744, "type" : "exam" }, { "score" : 28.8266541837344, "type" : "quiz" }, { "score" : 97.16831550665721, "type" : "homework" } ] }
+{ "_id" : 63, "name" : "Rubie Winton", "scores" : [ { "score" : 7.176062073558509, "type" : "exam" }, { "score" : 46.32426882511162, "type" : "quiz" }, { "score" : 19.24312817599633, "type" : "homework" } ] }
+{ "_id" : 94, "name" : "Darby Wass", "scores" : [ { "score" : 6.867644836612586, "type" : "exam" }, { "score" : 63.4908039680606, "type" : "quiz" }, { "score" : 85.41865347441522, "type" : "homework" } ] }
+{ "_id" : 95, "name" : "Omar Bowdoin", "scores" : [ { "score" : 8.58858127638702, "type" : "exam" }, { "score" : 88.40377630359677, "type" : "quiz" }, { "score" : 25.71387474240768, "type" : "homework" } ] }
+{ "_id" : 132, "name" : "Verdell Sowinski", "scores" : [ { "score" : 20.1442549902647, "type" : "exam" }, { "score" : 47.66457425945161, "type" : "quiz" }, { "score" : 77.87844292368344, "type" : "homework" } ] }
+{ "_id" : 143, "name" : "Gwyneth Garling", "scores" : [ { "score" : 44.29553481758053, "type" : "exam" }, { "score" : 23.15599504527296, "type" : "quiz" }, { "score" : 84.83695219376807, "type" : "homework" } ] }
+{ "_id" : 145, "name" : "Tandra Meadows", "scores" : [ { "score" : 19.07796402740767, "type" : "exam" }, { "score" : 7.63846325490759, "type" : "quiz" }, { "score" : 60.84655775785094, "type" : "homework" } ] }
+{ "_id" : 146, "name" : "Gwen Honig", "scores" : [ { "score" : 35.99646382910844, "type" : "exam" }, { "score" : 74.46323507534565, "type" : "quiz" }, { "score" : 90.95590422002779, "type" : "homework" } ] }
+{ "_id" : 177, "name" : "Rubie Winton", "scores" : [ { "score" : 36.1767454709986, "type" : "exam" }, { "score" : 89.39738121365069, "type" : "quiz" }, { "score" : 90.83326208217305, "type" : "homework" } ] }
+{ "_id" : 178, "name" : "Whitley Fears", "scores" : [ { "score" : 20.84454374176408, "type" : "exam" }, { "score" : 57.14851257871499, "type" : "quiz" }, { "score" : 99.77237745070993, "type" : "homework" } ] }

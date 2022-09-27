@@ -1,0 +1,3 @@
+db.getCollection("products").find(
+    { $or: [ { "type": "phone" }, { "type": "service" } ], "rating": { $gte: 3.5 } }
+)

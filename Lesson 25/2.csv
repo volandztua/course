@@ -1,0 +1,4 @@
+"_id",name,brand,type,price,rating,warranty_years,available,monthly_price,limits.voice.units,limits.voice.n,limits.voice.over_rate,limits.data.n,limits.data.over_rate,limits.sms.n,limits.sms.over_rate,sales_tax,term_years
+ac3,AC3 Phone,ACME,phone,200,3.8,1,true,,,,,,,,,,
+ac7,AC7 Phone,ACME,phone,320,4,1,false,,,,,,,,,,
+507d95d5719dbef170f15c00,Phone Service Family Plan,,service,,4,,,90,minutes,1200,0.05,unlimited,0,unlimited,0,true,2

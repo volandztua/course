@@ -1,0 +1,3 @@
+db.getCollection("students").find(
+    { "scores.0.type": "exam", "scores.0.score": { $lte: 45.65432764125526 }, "name": /.*w.*/i }
+)

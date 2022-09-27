@@ -1,0 +1,3 @@
+db.getCollection("companies").find(
+    { "category_code": "web", "founded_year": { $gt: NumberInt(2003) }, "twitter_username": null, "number_of_employees": { $gte: NumberInt(70) } }
+)
